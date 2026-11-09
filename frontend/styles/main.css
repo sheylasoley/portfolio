@@ -7,6 +7,7 @@
     --color-white: #ffffff;
     --color-black: #000000;
     --color-accent: #ff0000;
+    --color-highlight: #e6ffa8;
     /* gaps & sizes */
     --gap-around: 40px;
     /* fonts */
@@ -41,6 +42,7 @@
         }
     }
 }
+
 [data-layout="footer"] {
     padding: var(--gap-around);
     background-color: var(--color-accent);
@@ -60,10 +62,40 @@
             }
         }
     }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-self: center;
+        gap: 6px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: var(--color-highlight);
+            overflow: hidden;
+            text-decoration: none;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
 }
 
 /* Styling of all available page components. */
 [data-page] {
+    [data-page="project"] {
+
+}
     width: 100%;
     height: 100%;
 }
