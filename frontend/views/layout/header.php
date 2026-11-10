@@ -16,4 +16,9 @@ $logo = get_globals_logo();
             <?php endforeach; ?>
         </ul>
     </nav>
+    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 </header>
